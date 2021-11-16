@@ -1,0 +1,218 @@
+body {
+  font-family: "Hiragino Kaku Gothic ";
+  font-weight: bold;
+  height: 2000px;
+}
+/* investment information start */
+.investment-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 700px;
+  height: 400px;
+  position: relative;
+  left: 280px;
+  top: 50px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.investment-box__line {
+  position: absolute;
+  margin: 70px 0px;
+  left: 0.5px;
+  right: 1.5px;
+  border: 1px solid #e6e6e6;
+  width: 696px;
+}
+.investment-box__info-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.investment-box__info-content__year {
+  position: absolute;
+  right: 600px;
+  top: 40px;
+  color: #838383;
+}
+.investment-box__info-content__logo {
+  position: absolute;
+  right: 520px;
+  top: 30px;
+}
+.investment-box__info-content__name {
+  position: absolute;
+  right: 420px;
+  top: 35px;
+  width: 80px;
+  color: #269a82;
+}
+.investment-box__info-content__number {
+  position: absolute;
+  right: 300px;
+  top: 30px;
+  width: 100px;
+  color: black;
+  font-size: 20px;
+}
+.investment-box__info-content__details {
+  position: relative;
+  left: 110px;
+  right: 15px;
+  top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  font-weight: normal;
+}
+.investment-box__info-content__bar {
+  margin: 0px 8px 0px 8px;
+}
+.investment-box__info-content__famount {
+  color: #838383;
+  position: absolute;
+  right: 380px;
+  top: 20px;
+  font-size: 10px;
+}
+.investment-box__info-content__samount {
+  color: #838383;
+  position: absolute;
+  right: 460px;
+  top: 15px;
+  font-size: 10px;
+}
+.investment-box__info-content__extra-desc {
+  position: absolute;
+  right: 370px;
+}
+/* investment information end */
+
+/*news section start  */
+.news-section {
+  display: grid;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  width: 700px;
+  height: 370px;
+  left: 280px;
+  top: 70px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.news-section__line {
+  position: absolute;
+  margin: 90px 0px;
+  left: 0.5px;
+  right: 1.5px;
+  border: 1px solid #e6e6e6;
+  width: 696px;
+}
+.news-section__info-content {
+  display: grid;
+  grid-template-columns: 90px 50px 500px;
+  grid-row-gap: 18px;
+}
+.news-section__info-content__year {
+  color: #838383;
+}
+.news-section__info-content__type {
+  background: #67ba99;
+  color: white;
+  border-radius: 2px;
+  padding: 3px 5px;
+}
+.news-section__info-content__details {
+  font-size: 10px;
+  font-weight: normal;
+  margin-left: 15px;
+}
+/*news section end  */
+
+@media screen and (max-width: 768px) {
+  /* investment information start  */
+  .investment-box {
+    position: relative;
+    width: 770px;
+    height: 1040px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .investment-box__title {
+    right: 320px;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .investment-box__line {
+    width: 805px;
+    top: 2.5rem;
+    border: 1px solid #e6e6e6;
+  }
+  .investment-box__info-content {
+    padding-left: 180px;
+  }
+  .investment-box__info-content__year {
+    width: 100px;
+    height: 20px;
+    position: relative;
+    right: 150px;
+    top: 30px;
+  }
+  .investment-box__info-content__logo {
+    position: relative;
+    right: 250px;
+    top: 70px;
+    width: 70px;
+  }
+  .investment-box__info-content__name {
+    position: absolute;
+    right: 480px;
+    top: 80px;
+    width: 120px;
+  }
+
+  .investment-box__info-content__number {
+    position: absolute;
+    right: 330px;
+    top: 75px;
+    width: 150px;
+  }
+  .investment-box__info-content__details {
+    position: relative;
+    left: 40px;
+    right: 100px;
+    top: 70px;
+    width: 400px;
+    font-size: 23px;
+    margin-bottom: 100px;
+  }
+  .investment-box__info-content__famount {
+    position: absolute;
+    left: 350px;
+    right: 10px;
+    top: 30px;
+    font-size: 20px;
+    width: 120px;
+  }
+  .investment-box__info-content__samount {
+    position: absolute;
+    right: 100px;
+    top: 25px;
+    font-size: 20px;
+  }
+  .investment-box__info-content__extra-desc {
+    position: absolute;
+    left: 305px;
+    width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  /* investment information end  */
+}
